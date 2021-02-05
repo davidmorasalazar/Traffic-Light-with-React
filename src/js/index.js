@@ -7,9 +7,29 @@ import "bootstrap";
 
 //include your index.scss file into the bundle
 import "../styles/index.scss";
-
-//import your own components
-import { Home } from "./component/home.js";
+//recordar que las etiquetas siempre inician en mayuscula por sintaxis
+function TrafficTop() {
+	return (
+		<div className="container">
+			<div id="Traffic" className="row"></div>
+		</div>
+	);
+}
+function TrafficCenter() {
+	return (
+		<div className="container1">
+			<div id="Traffic" className="row"></div>
+		</div>
+	);
+}
+function App() {
+	return (
+		<div>
+			<TrafficTop />
+			<TrafficCenter />
+		</div>
+	);
+}
 
 //render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+ReactDOM.render(<App />, document.querySelector("#app"));

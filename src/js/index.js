@@ -18,7 +18,9 @@ function TrafficTop() {
 function TrafficCenter() {
 	return (
 		<div className="container1">
-			<div id="Traffic" className="row"></div>
+			<div className="Traffic"></div>
+			<div className="Traffic1"></div>
+			<div className="Traffic2"></div>
 		</div>
 	);
 }

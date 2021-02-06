@@ -15,14 +15,38 @@ function TrafficTop() {
 		</div>
 	);
 }
-function TrafficCenter() {
-	return (
-		<div className="container1">
-			<div className="Traffic"></div>
-			<div className="Traffic1"></div>
-			<div className="Traffic2"></div>
-		</div>
-	);
+class TrafficCenter extends React.Component {
+	constructor() {
+		super();
+		this.state = { ClickedLight: null };
+	}
+	render() {
+		let redextraclass = "";
+		if (this.state.ClickedLight == "red") redextraclass = "selected";
+		let orangeextraclass = "";
+		if (this.state.ClickedLight == "orange") orangeextraclass = "selected";
+		let greenextraclass = "";
+		if (this.state.ClickedLight == "green") greenextraclass = "selected";
+		return (
+			<div className="container1">
+				<div
+					className={"Traffic " + redextraclass}
+					onClick={() =>
+						this.setState({ ClickedLight: "red" })
+					}></div>
+				<div
+					className={"Traffic1 " + orangeextraclass}
+					onClick={() =>
+						this.setState({ ClickedLight: "orange" })
+					}></div>
+				<div
+					className={"Traffic2 " + greenextraclass}
+					onClick={() =>
+						this.setState({ ClickedLight: "green" })
+					}></div>
+			</div>
+		);
+	}
 }
 function App() {
 	return (

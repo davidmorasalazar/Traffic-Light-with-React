@@ -1,6 +1,6 @@
 @import "~bootstrap/scss/bootstrap.scss";
-.container {background: black; width: 1%;
-height: 100px;}
+.container {background: black; width: 10px;
+height: 70px;}
 .container1 {background: black; width: 10%;
 height: 180px;
 margin-left: 45%;
@@ -9,17 +9,23 @@ border-radius: 10%;}
 height: 60px;
 margin-left: 15%;
 border-radius: 50%;
-box-shadow: red;}
+box-shadow: red;
+cursor: pointer;
+&.selected{box-shadow: #f8ffcc 0px 0px 50px 20px;}}
 .Traffic1 {background: orange; width: 60px;
 height: 60px;
 margin-left: 15%;
 border-radius: 50%;
-box-shadow: orange;}
+box-shadow: orange;
+cursor: pointer;
+&.selected{box-shadow: #f8ffcc 0px 0px 50px 20px;}}
 .Traffic2 {background: green; width: 60px;
 height: 60px;
 margin-left: 15%;
 border-radius: 50%;
-box-shadow: green;}
+box-shadow: green;
+cursor: pointer;
+&.selected{box-shadow: #f8ffcc 0px 0px 50px 20px;}}
 
 /* 
 
